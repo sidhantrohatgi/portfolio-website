@@ -30,14 +30,14 @@ export default function Footer() {
                 <Linkedin size={20} />
               </a>
               <a
-                href="#"
+                href="https://github.com/sidhantrohatgi"
                 className="w-10 h-10 rounded-full bg-navy-light flex items-center justify-center text-gray-300 hover:text-white hover:bg-white/20 transition-all duration-300"
                 aria-label="GitHub"
               >
                 <Github size={20} />
               </a>
               <a
-                href="mailto:contact@example.com"
+                href="mailto:srohatgi@ucsd.edu"
                 className="w-10 h-10 rounded-full bg-navy-light flex items-center justify-center text-gray-300 hover:text-white hover:bg-white/20 transition-all duration-300"
                 aria-label="Email"
               >
