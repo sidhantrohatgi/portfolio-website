@@ -60,12 +60,12 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-white shadow-2xl mx-auto">
-              <Image
+              <img
                 src="/images/goa3.jpg"
                 alt="Sidhant Rohatgi"
-                fill
+                // fill
                 className="object-cover"
-                priority
+                // priority
               />
             </div>
 
