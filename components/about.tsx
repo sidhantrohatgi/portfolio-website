@@ -40,9 +40,7 @@ export default function About() {
               </div>
 
               <p className="text-gray-700 leading-relaxed mb-4">
-                I am a passionate student and professional at the intersection of technology, research, and product
-                management. Currently pursuing my Bachelor's degree at UC San Diego, I balance my academic studies with
-                hands-on experience in bioinformatics research and software development.
+              I am a third-year Mathematics-Computer Science major at the University of California, San Diego, with a strong passion for leveraging technology to address real-world challenges. I am currently seeking internships and research opportunities in the field of Computer Science to further develop my skills and contribute to impactful projects.
               </p>
 
               <p className="text-gray-700 leading-relaxed mb-4">
