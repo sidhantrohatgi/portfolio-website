@@ -6,7 +6,7 @@ import TypingAnimation from "./typing-animation"
 import { FileText } from "lucide-react"
 
 export default function Hero() {
-  const roles = ["Researcher", "Product Manager", "Developer"]
+  const roles = ["Developer", "Researcher", "Product Manager"]
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden bg-navy">
@@ -61,7 +61,7 @@ export default function Hero() {
           >
             <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-white shadow-2xl mx-auto">
               <Image
-                src="/placeholder.svg?height=400&width=400"
+                src="/images/goa3.jpg"
                 alt="Sidhant Rohatgi"
                 fill
                 className="object-cover"

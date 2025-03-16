@@ -11,7 +11,7 @@ interface TypingAnimationProps {
 
 export default function TypingAnimation({
   phrases,
-  typingSpeed = 100,
+  typingSpeed = 75,
   deletingSpeed = 50,
   delayBetweenPhrases = 1000,
 }: TypingAnimationProps) {

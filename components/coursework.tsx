@@ -230,6 +230,15 @@ export default function Coursework() {
       department: "MATH",
     },
     {
+      code: "MATH 183",
+      title: "Statistical Methods",
+      description:
+        "Introduction to probability. Discrete and continuous random variables–binomial, Poisson and Gaussian distributions. Central limit theorem. Data analysis and inferential statistics: graphical techniques, confidence intervals, hypothesis tests, curve fitting.",
+      prerequisites: "MATH 20C or MATH 31BH",
+      link: "https://catalog.ucsd.edu/courses/MATH.html#math183",
+      department: "MATH",
+    },
+    {
       code: "MATH 187",
       title: "Introduction to Cryptography",
       description:
