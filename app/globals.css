@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --navy: 220 47% 15%;
+    --navy-light: 220 47% 25%;
+    --navy-dark: 220 47% 10%;
+
+    --background: 0 0% 100%;
+    --background-alt: 213 100% 98%;
+    --foreground: 220 47% 15%;
+
+    --primary: 220 47% 15%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 213 100% 98%;
+    --secondary-foreground: 220 47% 15%;
+
+    --muted: 220 10% 90%;
+    --muted-foreground: 220 10% 40%;
+
+    --accent: 220 47% 15%;
+    --accent-foreground: 0 0% 100%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 47% 15%;
+
+    --border: 220 32% 91%;
+    --input: 220 32% 91%;
+    --ring: 220 47% 15%;
+
+    --radius: 0.5rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+.gradient-bg {
+  background: linear-gradient(to bottom, #f8fbff, #ffffff);
+}
+
+.wave-divider {
+  position: relative;
+  height: 70px;
+  margin-top: -70px;
+}
+
+.wave-divider svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  fill: #ffffff;
+}
+
+.beach-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 35c5 0 10-5 10-10s-5-10-10-10S5 20 5 25s5 10 10 10zm30 0c5 0 10-5 10-10s-5-10-10-10-10 5-10 10 5 10 10 10zM15 65c5 0 10-5 10-10s-5-10-10-10S5 50 5 55s5 10 10 10zm30 0c5 0 10-5 10-10s-5-10-10-10-10 5-10 10 5 10 10 10z' fill='%2314213D' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(20, 33, 61, 0.1), 0 10px 10px -5px rgba(20, 33, 61, 0.04);
+}
+
+.link-underline {
+  position: relative;
+}
+
+.link-underline:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #14213d;
+  transition: width 0.3s ease;
+}
+
+.link-underline:hover:after {
+  width: 100%;
+}
+
+.cat-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2314213D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z'/%3E%3Cpath d='M8 9v.5'/%3E%3Cpath d='M16 9v.5'/%3E%3Cpath d='M12 17c1.5 0 3-1 3-3h-6c0 2 1.5 3 3 3z'/%3E%3Cpath d='M9 3c0 2-2 3-2 3'/%3E%3Cpath d='M15 3c0 2 2 3 2 3'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.wave-bg {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%2314213D' fill-opacity='0.05' d='M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: center;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #14213d;
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #14213d;
+}
+
