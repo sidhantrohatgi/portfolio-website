@@ -72,7 +72,7 @@ export default function Experience() {
       title: "Undergraduate Researcher",
       company: "Edwin Solares Bioinformatics and AI Lab, UC San Diego",
       location: "San Diego, CA",
-      period: "Nov 2023 – Present",
+      period: "Nov 2023 – December 2024",
       description: [
         "Conducted genomic data analysis, building vector databases for LLM training.",
         "Optimized data processing for machine learning tasks, enhancing performance and cost efficiency.",
